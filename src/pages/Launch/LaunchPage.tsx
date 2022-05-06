@@ -45,12 +45,12 @@ function LaunchPage() {
   },[])
   
   return (
-    <Box p={3} maxW={'700px'} m={'auto'}>
+    <Box fontSize={'1rem'} fontFamily={"monospace"} p={3} maxW={'700px'} m={'auto'}>
       <Link to='/'>
-        <Button background={"#0f2027"} color={"white"} mx={3} mt={3} leftIcon={<ArrowLeftIcon />}> BACK</Button>
+        <Button background={"#2c5364"} color={"white"} mx={3} mt={3} leftIcon={<ArrowLeftIcon />}> BACK</Button>
       </Link>
-      {isLoading ?<Box mt={5}textAlign={'center'}> <Spinner size="xl" /></Box> : (
-        <Box color={"white"} bgGradient="linear(to right, #0f2027, #203a43, #2c5364)" p={6} mt={5} rounded={'md'}>
+      {isLoading ?<Box  mt={5}textAlign={'center'}> <Spinner size="xl" /></Box> : (
+        <Box  border={'4px'} borderColor={'white'}color={"white"} bgGradient="linear(to right, #0f2027, #203a43, #2c5364)" p={6} mt={5} rounded={'md'}>
               <Text fontSize={'3xl'} fontWeight={'extrabold'}>{name}</Text>
               <Text mb={8}>{!details?'No description':details}</Text>
         <Flex wrap={'wrap'} justifyContent={'space-between'} alignItems={'center'}>

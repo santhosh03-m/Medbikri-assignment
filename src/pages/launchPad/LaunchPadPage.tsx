@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { ApiService } from '../../api.services'
 import { LaunchPad } from '../../components/launchPad/LaunchPad'
-import { Spinner, Text,VStack } from '@chakra-ui/react'
-
+import { Image, Spinner, Text,VStack } from '@chakra-ui/react'
 const LaunchPadPage:React.FC=()=> {
   const [launchPads, setLaunchPads] = useState([])
   const [isLoading,setIsLoading] = useState(false)
@@ -20,7 +19,6 @@ const LaunchPadPage:React.FC=()=> {
   return (
     <>
       
-        
         <VStack mt={'5'} mx={3} p={3} spacing={10}>
          { isLoading ? <Spinner size="xl" /> : (
         

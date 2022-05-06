@@ -1,16 +1,14 @@
-import React from 'react';
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import LaunchPadPage from './pages/launchPad';
 import LaunchPage from './pages/Launch';
-import { Box, Image, Text, VStack } from '@chakra-ui/react';
-import rocketGif from './assets/8586-rocket-in-space.gif'
+import { Box, Icon, Image, Text, VStack } from '@chakra-ui/react';
 function App() {
   return (
-    <Box>
+    <Box pt={5} minH={'100vh'} bgGradient={"linear(to right, #d3cce3, #e9e4f0)"}>
       
-        <Text mt={3} bgGradient="linear(to right, #0f2027, #203a43, #2c5364)"
-      bgClip="text" fontSize='6xl' fontWeight={'bold'} textAlign={'center'}>SpaceX</Text>
+        <Text  bgGradient="linear(to right, #0f2027, #203a43, #2c5364)"
+        bgClip="text" fontSize='6xl' fontWeight={'bold'} textAlign={'center'}>SpaceX</Text>
         <BrowserRouter>
           <Routes>
             <Route path='/' element={<LaunchPadPage />}/>

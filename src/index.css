@@ -1,3 +1,7 @@
 * {
-    cursor: url('../assets/icons8-x-50.png');
+    cursor: url('./assets/icons8-x-50.png');
+}
+
+body {
+    background: black;
 }

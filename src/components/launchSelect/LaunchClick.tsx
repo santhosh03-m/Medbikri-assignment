@@ -8,7 +8,7 @@ interface Props{
 }
 const LaunchClick = ({ id }: Props) => {
   const [name, setName] = useState('')
-  const [buttonBg,setButtonBg] = useState('white')
+  const [buttonBg,setButtonBg] = useState('linear-gradient(to right, #d3cce3, #e9e4f0)')
     const navigate = useNavigate()
     const launchClickHandler = () => {
         navigate(`/launch/${id}`)
@@ -21,7 +21,7 @@ const LaunchClick = ({ id }: Props) => {
     fetchLaunch()
   },[])
   return (
-    <Flex alignItems={'center'} cursor={'pointer'} p={3} w={200} background={buttonBg} color={"black"} mt={2} onClick={launchClickHandler} onMouseOver={()=>setButtonBg('linear-gradient(to right, #d3cce3, #e9e4f0)')} onMouseLeave={()=>setButtonBg('white')} rounded={'md'}>
+    <Flex alignItems={'center'} cursor={'pointer'} p={3} w={200} background={buttonBg} color={"black"} mt={2} onClick={launchClickHandler} onMouseOver={()=>setButtonBg('linear-gradient(to right, #bdc3c7, #2c3e50)')} onMouseLeave={()=>setButtonBg('linear-gradient(to right, #d3cce3, #e9e4f0)')} rounded={'md'}>
       <Text>{name}</Text>
       <ArrowRightIcon ml={'auto'} />
     </Flex>
